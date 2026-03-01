@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package bookshelf.books;
+
+// A book
+message Book {
+  enum Cover {
+    PAPERBACK = 0;
+    HARDCOVER = 1;
+    EBOOK = 2;
+  }
+
+  string title = 1;
+  string author = 2;
+  string isbn = 3;
+  Cover cover = 4;
+  uint32 publication_year = 5;
+}
+
+// A book collection
+message BookCollection {
+  repeated Book books = 1;
+  string topic = 2;
+}

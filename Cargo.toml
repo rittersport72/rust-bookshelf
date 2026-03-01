@@ -1,0 +1,12 @@
+[package]
+name = "bookshelf"
+version = "0.1.0"
+authors = ["Johannes <johannes.kreutle111@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+bytes = "1.10"
+prost = "0.13"
+
+[build-dependencies]
+prost-build = "0.13"
